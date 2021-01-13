@@ -1,6 +1,8 @@
 # use Docker-based container (instead of OpenVZ)
 sudo: false
-
+arch:
+  - amd64
+  - ppc64le
 language: scala
 
 before_install: curl -Ls https://git.io/jabba | bash && . ~/.jabba/jabba.sh
